@@ -11,4 +11,15 @@ describe('workspace-project App', () => {
     page.navigateTo();
     expect(page.getParagraphText()).toEqual('Welcome to angular-testing!');
   });
+
+  it('should', () => {
+    page.navigateTo();
+    expect(page.getSubText()).toEqual('test');
+  })
+
+  it('should', async () => {
+    page.navigateToMy();
+    await page.buttonEx();
+    expect(page.resultText()).toContain('2');
+  })
 });

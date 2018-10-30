@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-testing';
+  sub = 'test';
+  video = 'assets/video.mp4'
+  logo = ''
 }
